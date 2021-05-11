@@ -1,4 +1,3 @@
-# projeto-particular
 <div id="app"></div>
 
 <html lang="pt">
@@ -16,6 +15,9 @@
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 
@@ -54,8 +56,8 @@
 	        </a>
 	                  
 	        <ul class="dropdown-menu">
-	          <li><a href="javascript:;">Item1 </a></li>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTavy9-PJehO1qw_64nuYMe6GXSw_I9fhU0jA&usqp=CAU
-	          <li><a href="javascript:;">Item 2</a></li>https://comunidade.rockcontent.com/wp-content/uploads/2015/05/EPW_O-que-s%C3%A3o-refer%C3%AAncias-na-hora-de-escrever-um-texto.png
+	          <li><a href="javascript:;">Item1 </a></li>
+	          <li><a href="javascript:;">Item 2</a></li>
 	        </ul>
 	      </li>
 	      
