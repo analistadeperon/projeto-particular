@@ -1,6 +1,27 @@
-# projeto-particular
-<div id="app"></div>
+webdesigntuts-workshop input {
+    background: #ddd;
+    width: 200px;
+}
+.webdesigntuts-workshop input:focus {
+    background: #ddd;
+    width: 250px;
+    color: black;
+}
 
+
+<div id="app"></div>
+<label for="appt">Choose a time for your meeting:</label>
+<section class=webdesigntuts-workshop>
+   <form action= method=>           
+     <input type=search placeholder=What are you looking for?>              
+     <button>Search</button>
+   </form>
+</section>
+
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+
+<small>Oline hours are 24am to 24pm</small>
 <html lang="pt">
 <head>
 	<meta charset="UTF-8"/>
@@ -21,6 +42,7 @@
 	<![endif]-->
 </head>
 <body>
+  
 
 <div class="aw-layout-loading  js-loading-overlay">
 	<div class="aw-layout-loading__container">
@@ -97,7 +119,7 @@
       <ul class="aw-menu__list">
 
         <li class="aw-menu__item">
-          <a href="dashboard.html"><i class="fa  fa-fw  fa-home"></i><span>Dashboard</span></a>
+          <a href="dashboard.html"><i class="fa  fa-fw  fa-home"></i><span>Matheus</span></a>
         </li>
 
         <li class="aw-menu__item  is-active">
@@ -317,6 +339,29 @@ font-size: x-small;
  <td><input name="telefone" type="text" id="telefone" size="20" maxlength="12" OnKeyPress="formatar('##-####-####', this)"  />
  <span class="style3">Apenas numeros</span> </td>
  </tr>
+ <!-- scripts -->
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="col-xs-6">
+        <div class="form-group">    
+            <label> RG </label>
+            <input class="form-control" type="text" />
+        </div>
+        <div class="form-inline">
+            <div class="form-group">
+                <label><span style="color: red"> * </span> DDD </label>
+                <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+                <label><span style="color: red"> * </span> Telefone </label>
+                <input class="form-control" type="text" />
+            </div>
+        </div>
+    </div>
  
  <tr>
  <td>Observacoes:</td>
@@ -442,10 +487,36 @@ A duração média do curso de Análise e Desenvolvimento de Sistemas é de 2 a 
 				<td><input type="checkbox" ng-model="contato.selecionado"></td>
 				<th>{{contato.serial}}</th>
 				<td>{{contato.nome | name | ellipsis:15}}</td>
-				<td>{{contato.telefone}}</td>
+				<td>{{contato.telefone}}</td><div>
+  <input type="text" placeholder="9999-9999 ou 9999-99999"  />    
+</div>
 				<td>{{contato.operadora.nome | lowercase}}</td>
 				<td>{{contato.data | date:'dd/MM/yyyy'}}</td>
+        
 			</tr>
+      <!-- scripts -->
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="col-xs-6">
+        <div class="form-group">    
+            <label> RG </label>
+            <input class="form-control" type="text" />
+        </div>
+        <div class="form-inline">
+            <div class="form-group">
+                <label><span style="color: red"> * </span> DDD </label>
+                <input class="form-control" type="text" />
+            </div>
+            <div class="form-group">
+                <label><span style="color: red"> * </span> Telefone </label>
+                <input class="form-control" type="text" />
+            </div>
+        </div>
+    </div>
 		</table>
 		<hr />
 		<form name="contatoForm">
